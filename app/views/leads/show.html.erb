@@ -1,0 +1,64 @@
+<p id="notice"><%= notice %></p>
+<%= link_to 'Edit', edit_lead_path(@lead) %> |
+<%= link_to 'Back', leads_path %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @lead.name %>
+</p>
+
+<p>
+  <strong>Contacted:</strong>
+  <%= @lead.contacted %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @lead.company %>
+</p>
+
+<p>
+  <strong>Website url:</strong>
+  <%= @lead.website_url %>
+</p>
+
+<p>
+  <strong>Phone:</strong>
+  <%= @lead.phone %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @lead.email %>
+</p>
+
+<p>
+  <strong>Address:</strong>
+  <%= @lead.address %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @lead.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @lead.state %>
+</p>
+
+<p>
+  <strong>Zip:</strong>
+  <%= @lead.zip %>
+</p>
+
+<p>
+  <strong>Website goals:</strong>
+  <%= @lead.website_goals %>
+</p>
+
+
+<%= render 'notes/note_form' %>
+  <div id="notes" data-lead-id="<%= @lead.id %>">
+    <%= render @lead.notes %>
+  </div>
