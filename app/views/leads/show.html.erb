@@ -60,5 +60,5 @@
 
 <%= render 'notes/note_form' %>
   <div id="notes" data-lead-id="<%= @lead.id %>">
-    <%= render @lead.notes %>
+    <%= render @lead.notes.reverse %>
   </div>
