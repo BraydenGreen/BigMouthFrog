@@ -7,6 +7,6 @@ class LeadsChannel < ApplicationCable::Channel
   end
 
   def send_note(data)
-    current_user.notes.create!(body: data['body'], lead_id: data['lead_id'])
+    current_user.notes.create!(body: data['note'], lead_id: data['lead_id'])
   end
 end
