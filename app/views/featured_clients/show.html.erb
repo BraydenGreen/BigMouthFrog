@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @featured_client.image %>
+</p>
+
+<p>
+  <strong>Website name:</strong>
+  <%= @featured_client.website_name %>
+</p>
+
+<p>
+  <strong>Testimonial:</strong>
+  <%= @featured_client.testimonial %>
+</p>
+
+<%= link_to 'Edit', edit_featured_client_path(@featured_client) %> |
+<%= link_to 'Back', featured_clients_path %>
