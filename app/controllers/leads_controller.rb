@@ -1,5 +1,5 @@
 class LeadsController < ApplicationController
-  before_action :set_lead, only: [:show, :edit, :update, :destroy]
+  before_action :set_lead, only: [:show, :edit, :update, :destroy, :contacted?]
   before_action :require_login, except: [:new, :create]
 
   # GET /leads
@@ -63,6 +63,13 @@ class LeadsController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def contacted?
+    if @lead.contacted == 'no'
+      @lead.contacted = 'yes'
+    end
+  end
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

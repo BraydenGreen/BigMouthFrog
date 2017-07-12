@@ -4,6 +4,8 @@ class Lead < ApplicationRecord
   has_many :notes, dependent: :destroy
 
 
+  
+
   def self.recent
     order("created_at DESC")
   end
