@@ -1,0 +1,2 @@
+module FeaturedClientsHelper
+end

@@ -1,0 +1,32 @@
+<%= form_with(model: featured_client, local: true) do |form| %>
+  <% if featured_client.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(featured_client.errors.count, "error") %> prohibited this featured_client from being saved:</h2>
+
+      <ul>
+      <% featured_client.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_area :image, id: :featured_client_image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :website_name %>
+    <%= form.text_field :website_name, id: :featured_client_website_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :testimonial %>
+    <%= form.text_area :testimonial, id: :featured_client_testimonial %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
