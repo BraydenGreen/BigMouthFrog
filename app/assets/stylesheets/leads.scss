@@ -16,6 +16,7 @@
 	text-align: center;
 	padding-top: 60px;
 	margin-bottom: 60px;
+
 }
 
 #form_title h1 {
@@ -45,11 +46,21 @@
 	width: 40%;
 }
 
+#new-form_container {
+    padding: 10px;
+	border: 1px solid white;
+	background-color: white;
+	border-radius: 2%;
+	margin-left: 10%;
+	width: 40%;
+}
+
 #form_smaller_input {
 	clear: both;
 }
 
 @media only screen and (max-width: 604px) {
+
 
 #form_paragraph {
 	float: none;
@@ -64,5 +75,6 @@
 #form_container {
 	width: 80%;
 }
+
 
 }
