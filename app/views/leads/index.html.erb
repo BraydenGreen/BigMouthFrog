@@ -20,6 +20,8 @@
   </thead>
 
   <tbody>
+    <%= link_to 'New Lead', new_lead_path %>
+    <hr />
     <% @leads.each do |lead| %>
       <tr>
         <td><%= lead.name %></td>
@@ -42,5 +44,3 @@
 </table>
 
 <br>
-
-<%= link_to 'New Lead', new_lead_path %>
