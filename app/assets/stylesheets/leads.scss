@@ -1,3 +1,50 @@
-// Place all the styles related to the Leads controller here.
+/*// Place all the styles related to the Leads controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+*/
+
+#form_background {
+	/*background-color: lime;*/
+}
+
+#form_stuff {
+	display: inline-block;
+}
+
+#form_title {
+	font-family: sans-serif;
+	text-align: center;
+	padding-top: 60px;
+	margin-bottom: 60px;
+}
+
+#form_title h1 {
+	font-size: 55px;
+	color: white;
+}
+
+#form_paragraph {
+	float: right;
+	width: 40%;
+	margin-right: 8%;
+	margin-top: 50px;
+}
+
+#form_paragraph p {
+	font-size: 40px;
+	color: white;
+	text-align: left;
+	font-family: serif;
+}
+
+#form_container {
+	border: 1px solid white;
+	background-color: white;
+	border-radius: 2%;
+	margin-left: 10%;
+	width: 40%;
+}
+
+#form_smaller_input {
+	clear: both;
+}

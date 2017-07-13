@@ -11,7 +11,13 @@
 // about supported directives.
 //
 //= require jquery
+//= require materialize-sprockets
 //= require rails-ujs
 //= require cable
 //= require turbolinks
 //= require_tree .
+
+
+$(document).ready(function() {
+  $('select').material_select();
+});
