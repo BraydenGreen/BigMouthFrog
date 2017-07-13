@@ -61,7 +61,20 @@
 
 @media only screen and (max-width: 604px) {
 
+
+#form_paragraph {
+	float: none;
+	width: 80%;
 }
-.new_form_row {
-margin-top: 5px;
+
+#form_paragraph p {
+	font-size: 20px;
+	text-align: center;
+}
+
+#form_container {
+	width: 80%;
+}
+
+
 }
