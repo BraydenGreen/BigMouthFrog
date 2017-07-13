@@ -4,7 +4,7 @@
 */
 
 #form_background {
-	background-color: lime;
+	background-color: #a6ddb7;
 }
 
 #form_stuff {
@@ -47,4 +47,8 @@
 
 #form_smaller_input {
 	clear: both;
+}
+
+@media only screen and (max-width: 604px) {
+
 }
