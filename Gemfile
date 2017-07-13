@@ -56,4 +56,4 @@ gem 'redis', '~> 3.3', '>= 3.3.3'
 gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form'
 gem 'materialize-sass'
-
+gem 'bootstrap', '~> 4.0.0.alpha6'

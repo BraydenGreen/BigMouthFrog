@@ -1,3 +1,80 @@
+#header {
+	height: 10%;
+	width: 100%;
+	background-color: black;
+}
+
+.mega-nav {
+	display: inline-block;
+}
+
+#mega-title {
+	margin-right: 20%;
+}
+
+#nav-linkness {
+	color: white;
+	font-size: 1.5em;
+	margin-left: 3%;
+}
+
+#drop-pic {
+	width: 100%;
+	height: 30%;
+}
+
+.mission-words {
+	text-align: center;
+	color: #a6ddb7;
+	margin-top: 50px;
+}
+
+#lilly-service {
+	width: 100%;
+	height: 400px;
+	background-color: #a6ddb7;
+}
+
+#box-service {
+	width: 100%;
+	height: 400px;
+	background-color: #a5a5a5;
+}
+
+#quote-home {
+	padding-top: 100px;
+}
+
+#lilly-row {
+	padding: 10px;
+}
+
+#lilly-row div {
+	height: 170px;
+	width: 170px;
+	display: inline-block;
+	margin: auto;
+	background-color: white;
+	margin-left: 8%;
+}
+
+@media only screen and (max-width: 500px) {
+
+#lilly-row div {
+	height: 100px;
+	width: 300px;
+}
+
+#lilly-service {
+	height: 900px;
+}
+
+#box-service {
+	height: 900px;
+}
+
+}
+
 #sample-header {
 	height: 100px;
 	background-color: black;
@@ -34,9 +111,18 @@
 
 #white-tile h2, h4, p {
 	
-	padding-left: 15%;
+	/*padding-left: 15%;*/
 	color: #a6ddb7;
 }
+
+#white-tile h2 {
+	font-size: 30px;
+}
+
+#white-tile h4 {
+	font-size: 20px;
+}
+
 
 #white-tile p {
 	width: 300px;
@@ -68,6 +154,14 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+}
+
+#grey-tile h2 {
+	font-size: 30px;
+}
+
+#grey-tile h4 {
+	font-size: 20px;
 }
 
 .pics {
@@ -141,7 +235,7 @@
 
 }
 
-<!-- portfolio -->
+
 
 #portfolio-wrapper {
 	background-color: #a6ddb7;
