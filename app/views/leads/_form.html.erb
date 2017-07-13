@@ -84,6 +84,11 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col s12">
+                        <%= form.select :lead_source, ['Facebook', 'Twitter', 'Instagram', 'Linkedin', 'Web', 'Referal'], prompt: "How did you find us?"%>
+                    </div>
+                </div>
+                <div class="row">
                     <div class=" col s12">
                         <div class="field">
                             <%= form.text_area :website_goals, placeholder: "Website Goals", id: :lead_website_goals %>
