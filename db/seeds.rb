@@ -10,6 +10,7 @@ User.create!(user_name: "bob", email: "test@test.com", password: "asdfasdf")
     address: "200 cool st",
     state: "CC",
     zip: 84542,
+    lead_source: "facebook",
     website_goals: "Curabitur blandit tempus porttitor. Aenean lacinia bibendum nulla sed consectetur. Maecenas sed diam eget risus varius blandit sit amet non magna. Nullam quis risus eget urna mollis ornare vel eu leo."
   )
 

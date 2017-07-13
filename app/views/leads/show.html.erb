@@ -57,6 +57,10 @@
   <%= @lead.website_goals %>
 </p>
 
+<p>
+  <strong>How did you find us?:</strong>
+  <%= @lead.lead_source %>
+</p>
 
 <%= render 'notes/note_form' %>
   <div id="notes" data-lead-id="<%= @lead.id %>">
