@@ -1,15 +1,26 @@
-<div id= "about-footer">
-	<div>
-		<a href="#"><p>Services</p></a>
-		<a href="#"><p>Portfolio</p></a>
+<div class="container">
+	<div id= "about-footer">
+		<div>
+			<%= link_to "Services", root_path, class: "link" %>
+			<br>
+			<%= link_to "Portfolio", portfolio_path, class: "link" %>
+		</div>
+		<div>
+			<%= link_to "About", about_path, class: "link" %>
+			<br>
+			<%= link_to "Proposal", new_lead_path, class: "link" %>
+		</div>
+		<div>
+			<a href="#"><p>801.123.4567</p></a>
+			<a href="#"><p>bmf@bigmout.com</p></a>
+		</div>
+		<div>
+			<% if user_signed_in? %>
+				<%= link_to "Logout", destroy_user_session_path, method: 'delete', class: "link" %>
+			<% else %>
+				<%= link_to "Login", new_user_session_path, class: "link" %>
+			<% end %>
+		</div>
+			<p id= "about-copyright">C Copyright stuff and stuff 2017</p>
 	</div>
-	<div>
-		<a href="#"><p>About</p></a>
-		<a href="#"><p>New Proposal</p></a>
-	</div>
-	<div>
-		<a href="#"><p>801.123.4567</p></a>
-		<a href="#"><p>bmf@bigmout.com</p></a>
-	</div>
-		<p id= "about-copyright">C Copyright stuff and stuff 2017</p>
 </div>
