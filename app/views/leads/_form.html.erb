@@ -5,7 +5,7 @@
                 <% if lead.errors.any? %>
 
                     <% lead.errors.full_messages.each do |message| %>
-                        <%= js add_gritter(message, title: 'BigMouthFrog', sticky: false) %>
+                        <%= js add_gritter(message, title: 'BigMouthFrog', sticky: false, nodom_wrap: true) %>
                     <% end %>
         </div>
     <% end %>
