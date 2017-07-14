@@ -1,9 +1,15 @@
 <div id= "header">
- <%= link_to image_tag('/assets/cologo.png'), root_path, class: 'mega-nav', id: "mega-title" %>
-    <img class= "mega-nav" id="frog-pic" src="/assets/frog.png">
+	<div id="bmf-pic-thing">
+			<%= link_to image_tag('/assets/cologo.png'), root_path, class: 'mega-nav', id: "mega-title" %>
+	</div>
+	<div>
+		<img class= "mega-nav" id="frog-pic" src="/assets/frog.png">
+	</div>
 
+  <div>
     <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>About Us</p>".html_safe), about_path %>
     <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>Contact</p>".html_safe), contact_path %>
-
     <%= link_to ("<p class='mega-nav' id='nav-linkness'>Featured Clients</p>".html_safe), featured_clients_path %>
+  </div>
 </div>
+ 

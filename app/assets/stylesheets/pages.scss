@@ -1,4 +1,3 @@
-
 @import "gritter";
 
 #header {
@@ -7,18 +6,26 @@
 	background-color: black;
 }
 
+#header div {
+	display: inline-block;
+}
+
+#bmf-pic-thing {
+	margin-right: 15%;
+}
+
 .mega-nav {
 	display: inline-block;
 }
 
 #mega-title {
-	margin-right: 20%;
+	/*margin-right: 15%;*/
 }
 
 #nav-linkness {
 	color: white;
 	font-size: 1.5em;
-	margin-left: 3%;
+	margin-left: 15px;
 }
 
 .link {
@@ -105,7 +112,7 @@
 }
 
 #white-tile {
-	height: 300px;
+	height: 450px;
 	width: 100vw;
   position: relative;
   left: 50%;
@@ -137,8 +144,8 @@
 }
 
 #grey-tile h2 {
-	padding-top: 3%;
-	padding-left: 15%;
+
+
 	color: #a6ddb7;
 }
 
@@ -154,7 +161,7 @@
 }
 
 #grey-tile {
-	height: 300px;
+	height: 450px;
 	background-color: #f4f7f5;
 	width: 100vw;
   position: relative;
@@ -173,8 +180,9 @@
 }
 
 .pics {
-  max-height: 200px;
-  max-width: 200px;
+
+  max-height: 350px;
+  max-width: 350px;
 	margin-top: 4%;
 
 }
@@ -183,6 +191,10 @@
 	margin-left: 18%;
 	display: inline-block;
 }
+
+
+
+
 
 #about-footer {
     text-align: center;
@@ -217,19 +229,27 @@
 	color: white;
 }
 
-@media only screen and (max-width: 788px) {
+@media only screen and (max-width: 1020px) {
 
 #white-tile {
-	height: 400px;
+	height: 750px;
 }
 
 #grey-tile {
-	height: 400px;
+	height: 650px;
 }
 
 }
 
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 800px) {
+
+#grey-tile {
+	height: 700px;
+}
+
+}
+
+@media only screen and (max-width: 1500px) {
 
 #about-footer {
 	height: 320px;
@@ -237,10 +257,18 @@
 
 }
 
+@media only screen and (max-width: 910px) {
+
+#about-footer {
+	height: 420px;
+}
+
+}
+
 @media only screen and (max-width: 604px) {
 
 #about-footer {
-	height: 450px;
+	height: 650px;
 }
 
 }
