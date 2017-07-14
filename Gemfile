@@ -57,3 +57,4 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 gem 'simple_form'
 gem 'materialize-sass'
 gem "gritter", "1.2.0"
+gem 'jquery-turbolinks', '~> 2.1'
