@@ -1,0 +1,9 @@
+<%= form_for lead, url: '' do |form| %>
+  <% if lead.contacted == 0 || lead.contacted == '0' || lead.contacted == 'no' %>
+    <div class="field">
+      <%= form.check_box(:contacted) %>
+      <%= form.label(:contacted, "Contacted client?") %>
+      <%= form.submit class: "actions btn waves-effect waves-light green lighten-3" %>
+    </div>
+  <% end %>
+<% end %>

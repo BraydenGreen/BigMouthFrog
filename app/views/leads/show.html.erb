@@ -9,7 +9,7 @@
 
 <p>
   <strong>Contacted:</strong>
-  <%= @lead.contacted? %>
+  <%= @lead.contacted %>
 </p>
 
 <p>
@@ -61,8 +61,8 @@
   <strong>How did you find us?:</strong>
   <%= @lead.lead_source %>
 </p>
-<%#=  check_box(@lead, :contacted, options = {}, (checked_value = 1), (unchecked_value = 0), public) %>
 
+<%= render partial: 'leads/contacted_form', locals: {lead: @lead} %>
 <%= render 'notes/note_form' %>
   <div id="notes" data-lead-id="<%= @lead.id %>">
     <%= render @lead.notes.reverse %>
