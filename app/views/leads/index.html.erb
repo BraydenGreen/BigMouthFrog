@@ -22,10 +22,11 @@
     <hr />
     <% @leads.each do |lead| %>
       <tr>
-      <% if lead.created_at.to_time - Time.now < 604800 %>
-        <td><span class="badge green" style="color: white;">new</span></td>
-      <% else %>
+      <!-- 604800 -->
+      <% if (Time.now - lead.created_at.to_time) > 604800 %>
         <td><span class="badge yellow" style="color: white;">old</span></td>
+      <% else %>
+        <td><span class="badge green" style="color: white;">new</span></td>
       <% end %>  
         <td><%= lead.name %></td>
         <td><%= lead.company %></td>
