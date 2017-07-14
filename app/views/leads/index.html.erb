@@ -5,15 +5,13 @@
 <table>
   <thead>
     <tr>
+      <th>Recent</th>
       <th>Name</th>
       <th>Company</th>
       <th>Website url</th>
       <th>Phone</th>
       <th>Email</th>
       <th>Address</th>
-      <th>City</th>
-      <th>State</th>
-      <th>Zip</th>
       <th>Website goals</th>
       <th>Contacted</th>
     </tr>
@@ -24,17 +22,23 @@
     <hr />
     <% @leads.each do |lead| %>
       <tr>
+      <% if lead.created_at.to_time - Time.now < 604800 %>
+        <td><span class="badge green" style="color: white;">new</span></td>
+      <% else %>
+        <td><span class="badge yellow" style="color: white;">old</span></td>
+      <% end %>  
         <td><%= lead.name %></td>
         <td><%= lead.company %></td>
         <td><%= lead.website_url %></td>
         <td><%= lead.phone %></td>
         <td><%= lead.email %></td>
-        <td><%= lead.address %></td>
-        <td><%= lead.city %></td>
-        <td><%= lead.state %></td>
-        <td><%= lead.zip %></td>
-        <td><%= lead.website_goals %></td>
-        <td><%= lead.contacted %></td>
+        <td><%= lead.address %>, <%= lead.city %>, <%= lead.state %> <%= lead.zip %></td>
+        <td><%= truncate(lead.website_goals, length: 35) %></td>
+        <% if lead.contacted == "yes" %>
+          <td><span class="badge green" style="color: white;"><%= lead.contacted %></span></td>
+        <% else %>
+          <td><span class="badge red" style="color: white;"><%= lead.contacted %></span></td>
+        <% end %>
         <td><%= link_to 'Show', lead %></td>
         <td><%= link_to 'Edit', edit_lead_path(lead) %></td>
         <td><%= link_to 'Destroy', lead, method: :delete, data: { confirm: 'Are you sure?' } %></td>
