@@ -41,19 +41,19 @@
 
 .mission-words {
 	text-align: center;
-	color: #a6ddb7;
+	color: #4da76e;
 	margin-top: 50px;
 }
 
 #lilly-service {
 	width: 100%;
 	height: 400px;
-	background-color: #a6ddb7;
+	background-color: #4da76e;
 }
 
 #box-service {
 	width: 100%;
-	height: 400px;
+	height: 600px;
 	background-color: #a5a5a5;
 }
 
@@ -71,24 +71,60 @@
 	display: inline-block;
 	margin: auto;
 	background-color: white;
-	margin-left: 8%;
+	margin-left: 13%;
+}
+
+#lilly-row img {
+	padding: 10px;
+	max-height: 170px;
+	max-width: 170px;
+	margin: auto;padding-left: 10px;
+}
+
+.low-margin {
+	margin-left: 15px;
+}
+
+@media only screen and (max-width: 882px) {
+
+#lilly-service {
+	height: 750px;
+}
+
 }
 
 @media only screen and (max-width: 500px) {
 
 #lilly-row div {
-	height: 100px;
-	width: 300px;
+	height: 170px;
+	width: 200px;
 }
 
 #lilly-service {
-	height: 900px;
+	height: 1100px;
 }
 
 #box-service {
-	height: 900px;
+	height: 250px;
 }
 
+}
+
+.groupPhoto {
+	border-radius: 10px;
+	width: 60%;
+	text-align: center;
+	max-height: 500px;
+}
+
+#grouppic {
+	margin-right: 10%;
+
+}
+
+#box-service h3 {
+	text-align: center;
+	color: #4da76e;
 }
 
 #sample-header {
@@ -127,7 +163,7 @@
 
 #white-tile h2, h4, p {
 
-	color: #a6ddb7;
+	color: #4da76e;
 }
 
 #white-tile h2 {
@@ -146,13 +182,13 @@
 #grey-tile h2 {
 
 
-	color: #a6ddb7;
+	color: #4da76e;
 }
 
 #grey-tile h2, h4, p {
 
 
-	color: #a6ddb7;
+	color: #4da76e;
 }
 
 #grey-tile p {
@@ -196,7 +232,7 @@
 #about-footer {
     text-align: center;
 	height: 200px;
-	background-color: #a6ddb7;
+	background-color: #4da76e;
 	width: 100vw;
   position: relative;
   left: 50%;
@@ -222,7 +258,7 @@
 
 #about-copyright {
 	text-align: center;
-	background-color: #a6ddb7;
+	background-color: #4da76e;
 	color: white;
 }
 
@@ -271,8 +307,9 @@
 }
 
 
+
 #portfolio-wrapper {
-	background-color: #a6ddb7;
+	background-color: #4da76e;
 }
 
 .groupPhoto {
