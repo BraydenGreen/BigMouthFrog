@@ -14,7 +14,7 @@
     <div class="row">
         <div class=" col s8">
             <div class="field">
-                <%= form.text_field :name, placeholder: "Name",  id: :lead_name %>
+                <%= form.text_field :name, placeholder: "Name*",  id: :lead_name %>
             </div>
         </div>
 
@@ -75,29 +75,32 @@
     <div class="row">
         <div class=" col s12">
             <div class="field">
-                <%= form.text_field :email, placeholder: "Email", id: :lead_email %>
+                <%= form.text_field :email, placeholder: "Email*", id: :lead_email %>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col s12">
-            <%= form.select :lead_source, ['Facebook', 'Twitter', 'Instagram', 'Linkedin', 'Web', 'Referral'], prompt: "How did you find us?" %>
+            <%= form.select :lead_source, ['Facebook', 'Twitter', 'Instagram', 'Linkedin', 'Web', 'Referral'], prompt: "How did you find us?*" %>
         </div>
     </div>
     <div class="row">
         <div class=" col s12">
             <div class="field">
                 <%= form.text_area :website_goals, placeholder: "Website Goals", id: :lead_website_goals %>
-                
+
             </div>
         </div>
     </div>
     <div class="row">
-        <div class="col s12">
+        <div class="col s8">
 
             <div class="actions">
-                <%= form.submit class: "btn waves-effect waves-light green lighten-3" %>
+                <%= form.submit "Submit", class: "btn waves-effect waves-light green lighten-1" %>
             </div>
+        </div>
+        <div class="col s4">
+          <p>*Required fields</p>
         </div>
     </div>
 <% end %>

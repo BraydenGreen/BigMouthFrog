@@ -44,6 +44,12 @@
 	color: #4da76e;
 	margin-top: 50px;
 }
+.mission-title {
+	padding-top: 30px;
+}
+.mission-words-align h5 {
+	padding-top: 70px;
+}
 
 #lilly-service {
 	width: 100%;
@@ -63,6 +69,7 @@
 
 #lilly-row {
 	padding: 10px;
+	margin-left: 8%; // added for temperary centering
 }
 
 #lilly-row div {
@@ -119,8 +126,7 @@
 }
 
 #grouppic {
-	margin-right: 10%;
-
+	margin-right: 15%; // adjusted for temperary centering originally 10%
 }
 
 #box-service h3 {
