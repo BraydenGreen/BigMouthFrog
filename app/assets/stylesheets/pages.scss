@@ -17,7 +17,7 @@
 .mega-nav {
 	display: inline-block;
 }
-
+ 
 #mega-title {
 	/*margin-right: 15%;*/
 }
@@ -72,6 +72,7 @@
 	margin: auto;
 	background-color: white;
 	margin-left: 13%;
+	border-radius: 10px;
 }
 
 #lilly-row img {
@@ -82,7 +83,7 @@
 }
 
 .low-margin {
-	margin-left: 15px;
+	width: 167px;
 }
 
 @media only screen and (max-width: 882px) {
@@ -124,7 +125,8 @@
 
 #box-service h3 {
 	text-align: center;
-	color: #4da76e;
+	color: white;
+	font-family: courier;
 }
 
 #sample-header {
@@ -230,8 +232,8 @@
 
 
 #about-footer {
-    text-align: center;
-	height: 200px;
+  text-align: center;
+	height: 300px;
 	background-color: #4da76e;
 	width: 100vw;
   position: relative;
@@ -282,15 +284,9 @@
 
 }
 
-@media only screen and (max-width: 1500px) {
 
-#about-footer {
-	height: 320px;
-}
 
-}
-
-@media only screen and (max-width: 910px) {
+@media only screen and (max-width: 1219px) {
 
 #about-footer {
 	height: 420px;
@@ -298,10 +294,18 @@
 
 }
 
-@media only screen and (max-width: 604px) {
+@media only screen and (max-width: 855px) {
 
 #about-footer {
-	height: 650px;
+	height: 550px;
+}
+
+}
+
+@media only screen and (max-width: 555px) {
+
+#about-footer {
+	height: 850px;
 }
 
 }
