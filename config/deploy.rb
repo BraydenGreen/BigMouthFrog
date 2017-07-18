@@ -1,7 +1,7 @@
 # Change these
-server '165.227.11.147', port: 5432, roles: [:web, :app, :db], primary: true
+server '165.227.11.147', port: 22, roles: [:web, :app, :db], primary: true
 
-set :repo_url,        'https://github.com/AaronRAnderson/BigMouthFrog.git'
+set :repo_url,        'git@github.com:AaronRAnderson/BigMouthFrog.git'
 set :application,     'BigMouthFrog'
 set :user,            'deploy'
 set :puma_threads,    [4, 16]
