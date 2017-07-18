@@ -1,5 +1,5 @@
 # Change these
-server '165.227.11.147', port: 22, roles: [:web, :app, :db], primary: true
+server '165.227.11.147', port: 80, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'git@github.com:AaronRAnderson/BigMouthFrog.git'
 set :application,     'BigMouthFrog'
