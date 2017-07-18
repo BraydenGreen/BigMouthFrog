@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: BigMouthFrog_production
-  username: BigMouthFrog
+  username: deploy
   password: <%= ENV['BIGMOUTHFROG_DATABASE_PASSWORD'] %>
