@@ -31,7 +31,7 @@ class LeadsController < ApplicationController
     @lead = Lead.new(lead_params)
     respond_to do |format|
       if @lead.save
-        format.html { redirect_to root_path, notice: 'Thank you for submitting' }
+        format.html { redirect_to @lead, notice: 'Thank you for submitting' }
         format.json { render :show, status: :created, location: @lead }
       else
         format.html { render :new }
