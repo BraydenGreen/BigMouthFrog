@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   root to: 'pages#home'
 
   get '/about', to: 'pages#about'
-  # get '/featured-clients', to: 'pages#portfolio'
+  get '/featured-clients', to: 'pages#portfolio'
 
   resources :leads
   get '/contact', to: 'leads#new'
