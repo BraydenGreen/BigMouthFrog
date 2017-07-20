@@ -1,62 +1,61 @@
 <div class="container">
     <div id= "about-footer">
         <div>
-            <%= link_to "About", about_path, class: "link" %>
+            <%= link_to "About Us", about_path, class: "link" %>
             <br>
         </div>
-        <div>
-            <%= link_to "Featured Clients", featured_clients_path, class: "link" %>
-        </div>
+  <!-- <div>
+           <%#= link_to "Featured Clients", featured_clients_path, class: "link" %>
+       </div> -->
         <div>
             <br>
             <%= link_to "Contact", contact_path, class: "link" %>
         </div>
         <div>
-            <a href="#"><p>801.123.4567</p></a>
+            <p><%= number_to_phone "8016604411" %></p>
         </div>
         <div>
-            <a href="#"><p>bmf@bigmout.com</p></a>
+            <a href="mailto:bmfdev1@gmail.com?"><p>bmfdev1@gmail.com</p></a>
         </div>
 
         <% if user_signed_in? %>
-            <div>
-                <%= link_to "Leads", leads_path, class: "link" %>
-            </div>
-
+          <div>
+            <%= link_to "Leads", leads_path, class: "link" %>
+          </div>
         <% end %>
         <div>
-            <% if user_signed_in? %>
-                <%= link_to "Logout", destroy_user_session_path, method: 'delete', class: "link" %>
-            <% else %>
-                <%= link_to "Employee Login", new_user_session_path, class: "link" %>
-            <% end %>
+          <% if user_signed_in? %>
+            <%= link_to "Logout", destroy_user_session_path, method: 'delete', class: "link" %>
+          <% else %>
+            <%= link_to "Employee Login", new_user_session_path, class: "link employee" %>
+          <% end %>
         </div>
-      <div>  
+      <div>
         <div>
             <%= link_to "https://www.facebook.com/bigmouthfrogdev/", target: :_blank do %>
                 <i class="fa fa-facebook-official fa-3x" aria-hidden="true" style="color: green;"></i>
-            <% end %>  
+            <% end %>
         </div>
 
         <div>
             <%= link_to "https://www.instagram.com/bigmouthfrogdev/", target: :_blank do %>
                 <i class="fa fa-instagram fa-3x" aria-hidden="true" style="color: green;"></i>
-            <% end %>  
+            <% end %>
         </div>
 
         <div>
             <%= link_to "https://www.linkedin.com/company-beta/18149990/", target: :_blank do %>
                 <i class="fa fa-linkedin fa-3x" aria-hidden="true" style="color: green;"></i>
-            <% end %>  
+            <% end %>
         </div>
 
         <div>
             <%= link_to "https://twitter.com/bigmouthfrogdev", target: :_blank do %>
                 <i class="fa fa-twitter-square fa-3x" aria-hidden="true" style="color: green;"></i>
-            <% end %>  
+            <% end %>
         </div>
       </div>
 
-        <p id= "about-copyright">C Copyright stuff and stuff 2017</p>
+        <p id= "about-copyright"><%= @copyright %></p>
     </div>
 </div>
