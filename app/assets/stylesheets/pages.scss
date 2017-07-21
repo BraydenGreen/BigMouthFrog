@@ -22,6 +22,10 @@
 	/*margin-right: 15%;*/
 }
 
+#about_contact {
+	font-family: sans;
+}
+
 #nav-linkness {
 	color: white;
 	font-size: 1.5em;
@@ -39,10 +43,20 @@
 	height: 30%;
 }
 
+
 .mission-words {
 	text-align: center;
 	color: #4da76e;
 	margin-top: 50px;
+}
+
+.mission-words h1 {
+	font-family: bellefair;
+}
+
+.mission-words h5 {
+	font-family: sans;
+	margin-top: 3%;
 }
 
 #lilly-service {
@@ -59,10 +73,12 @@
 
 #quote-home {
 	padding-top: 100px;
+	font-family: sans;
 }
 
 #lilly-row {
-	padding: 10px;
+	text-align: center;
+	padding-top: 1%;
 }
 
 #lilly-row div {
@@ -71,7 +87,8 @@
 	display: inline-block;
 	margin: auto;
 	background-color: white;
-	margin-left: 13%;
+	margin-left: 5%;
+	margin-right: 5%;
 	border-radius: 10px;
 }
 
@@ -80,6 +97,7 @@
 	max-height: 170px;
 	max-width: 170px;
 	margin: auto;padding-left: 10px;
+	position: relative;
 }
 
 .low-margin {
@@ -119,14 +137,13 @@
 }
 
 #grouppic {
-	margin-right: 10%;
-
+	text-align: center;
 }
 
 #box-service h3 {
 	text-align: center;
 	color: white;
-	font-family: courier;
+	font-family: bellefair;
 }
 
 #sample-header {
@@ -241,6 +258,7 @@
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  font-family: sans;
 }
 
 #about-footer div {
@@ -250,7 +268,7 @@
 
 #about-footer div p {
 	color: white;
-	font-size: 1.3em;
+	font-size: 1.5em;
 	width: 200px;
 }
 
@@ -318,10 +336,9 @@
 
 .groupPhoto {
   height: 90%;
-  margin: 1.5% 0% 0 29.5%;
 }
 
 
 .employee {
-	font-size: 12px;
+	font-size: 15px;
 }
