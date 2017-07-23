@@ -1,34 +1,26 @@
 <%= image_tag "dropgr.jpg", id: 'drop-pic' %>
-<div id="white-tile">
-	<div class="mission-words">
-	<h1>Our Mission</h1>
-	<h5>Big Mouth Frog brings passions to life by creating tailored web solutions that work.</h5>
+<div id="first-content row col-12">
+	<div class="parallax-container">
+  	<div class="parallax"><%= image_tag "lilypad.jpg"%></div>
+			<div class="container">
+				<%= render 'our_mission_content' %>
+			</div>			
 	</div>
 </div>
-<div id="lilly-service">
-	<div id="lilly-row">
-		<div><%= image_tag "SmallBiz.png" %></div>
-		<div><%= image_tag "ClientPortals.png" %></div>
-		<div><%= image_tag "E-commerce.png" %></div>
+<div class="white-tile row col-12">
+	<div class="container">
+		<%= render 'second_content' %>
 	</div>
-	<div id="lilly-row">
-		<div><%= image_tag "Start-ups.png", class: "low-margin" %></div>
-		<div><%= image_tag "Static.png", class: "low-margin" %></div>
-		<div><%= image_tag "Blog.png", class: "low-margin" %></div>
+</div>
+<div class="parallax-container">
+  <div class="parallax"><%= image_tag "lilyblossom.jpg"%></div>
+</div>
 
-	</div>
-</div>
-<div id="white-tile">
-
-	<div class="mission-words">
-		<h5 id="quote-home">With Big Mouth Frog Development, your website is comprised of powerful web apps that empower your customers to: schedule an appointment, purchase your services or products with online payments, chat with sales, promote their experience with friends, and so much more!  </h5>
-	</div>
-</div>
-<div id="box-service">
+<!-- <div id="box-service">
 <h3>Our Family</h3>
 <div id="grouppic">
 	<%= image_tag "groupFrog.jpg", class: "groupPhoto" %>
-</div>
+</div> -->
 <!-- 	<div id="lilly-row">
 		<div></div>
 		<div></div>
@@ -41,10 +33,11 @@
 		<div></div>
 		<div></div>
 	</div> -->
-</div>
+<!-- </div>
 <div id="white-tile">
 
 	<h5 id="quote-home" class="mission-words">Behind the curtain, managers and employees can securely have: updated accounting reports, manage inventory, time clocks, and GPS tracking to name a few ideas.  With all this streamlined, you have more time to focus on the essentials and your business can be fun again!</h5>
 
 
 </div>
+ -->
