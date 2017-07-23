@@ -1,5 +1,4 @@
 <%= image_tag "dropgr.jpg", id: 'drop-pic' %>
-<div id="first-content row col-12">
 	<div class="parallax-container">
   	<div class="parallax"><%= image_tag "lilypad.jpg"%></div>
 			<div class="container">
@@ -7,37 +6,25 @@
 			</div>			
 	</div>
 </div>
-<div class="white-tile row col-12">
-	<div class="container">
-		<%= render 'second_content' %>
+<div class="tile grey-background row col-12" style="margin-bottom: 0px">
+		<div class="buffer">
+			<div class="mission-words">
+				<h4>With the press of a button our services allow you to:</h4><br><br>
+			</div>
+		<div class="col s12 m6">
+			<%= render 'client_content' %>
+		</div>
+		<div class="col s12 m6">
+			<%= render 'business_owner_content' %><br>
+		</div>
+		<div class="mission-words">
+		  <h5>With all of this streamlined you can focus on building your business and the little details that make your business unique.</h5>
+		</div>
 	</div>
 </div>
 <div class="parallax-container">
-  <div class="parallax"><%= image_tag "lilyblossom.jpg"%></div>
+  <div class="parallax"><%= image_tag "frog_in_water.jpg"%></div>
+  	<div class="row col-12 container business-services-text">
+  		<%= render 'third_block_content' %>
+  	</div>
 </div>
-
-<!-- <div id="box-service">
-<h3>Our Family</h3>
-<div id="grouppic">
-	<%= image_tag "groupFrog.jpg", class: "groupPhoto" %>
-</div> -->
-<!-- 	<div id="lilly-row">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-	<div id="lilly-row">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div> -->
-<!-- </div>
-<div id="white-tile">
-
-	<h5 id="quote-home" class="mission-words">Behind the curtain, managers and employees can securely have: updated accounting reports, manage inventory, time clocks, and GPS tracking to name a few ideas.  With all this streamlined, you have more time to focus on the essentials and your business can be fun again!</h5>
-
-
-</div>
- -->

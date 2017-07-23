@@ -54,7 +54,7 @@ body {
 	text-align: center;
 	color: white;
   text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
-	margin-top: 50px;
+	margin-top: 30px;
 }
 
 .mission-words h1 {
@@ -103,7 +103,8 @@ body {
 	padding: 10px;
 	max-height: 170px;
 	max-width: 170px;
-	margin: auto;padding-left: 10px;
+	margin: auto;
+  padding-left: 10px;
 	position: relative;
 }
 
@@ -173,7 +174,7 @@ body {
 	padding-top: 15px;
 }
 
-#white-tile {
+#tile {
 	height: 500px;
 	width: 100vw;
   position: relative;
@@ -181,6 +182,11 @@ body {
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
+  margin-bottom: 0px;
+}
+
+.grey-background {
+  background-color: #323C38;
 }
 
 /*#white-tile h2 {
@@ -222,17 +228,6 @@ body {
 #grey-tile p {
 
 	width: 300px;
-}
-
-#grey-tile {
-	height: 450px;
-	background-color: #f4f7f5;
-	width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
 }
 
 #grey-tile h2 {
@@ -357,4 +352,18 @@ body {
 
 .parallax-container {
    min-height: 650px
+}
+
+.buffer {
+  padding: 42px;
+}
+
+
+.collection-header {
+  font-size: 20px;
+  color: #4da76e;
+}
+.collection-item{
+
+  font-size: 20px;
 }
