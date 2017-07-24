@@ -278,12 +278,12 @@ body {
 }
 
 #about-footer a {
-  font-size: 8px;
+  font-size: 19px;
   text-decoration: none;
 }
 
 #about-copyright {
-  font-size: 8px;
+  font-size: 18px;
 	text-align: center;
 	background-color: #4da76e;
 	color: white;
@@ -366,4 +366,22 @@ body {
 .collection-item{
 
   font-size: 20px;
+}
+
+#button-div {
+  margin-top: 42px;
+}
+
+#title-push-down {
+  margin-top: 300px;
+}
+
+.button-custom {
+  margin-right: 42px;
+  padding: 10px 24px 10px 24px;
+  border: 1px solid transparent;
+}
+
+.button:hover {
+  border: 1px solid white;
 }

@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 <%= image_tag "dropgr.jpg", id: 'drop-pic' %>
 	<div class="parallax-container">
   	<div class="parallax"><%= image_tag "lilypad.jpg"%></div>
@@ -5,7 +7,6 @@
 				<%= render 'our_mission_content' %>
 			</div>			
 	</div>
-</div>
 <div class="tile grey-background row col-12" style="margin-bottom: 0px">
 		<div class="buffer">
 			<div class="mission-words">
@@ -24,7 +25,32 @@
 </div>
 <div class="parallax-container">
   <div class="parallax"><%= image_tag "frog_in_water.jpg"%></div>
-  	<div class="row col-12 container business-services-text">
-  		<%= render 'third_block_content' %>
+  	<div class="col s12 m6">
+  			<div class="mission-words" id="title-push-down">
+  			  <h3>Thanks for hopping in!</h3>
+  			</div>
   	</div>
+  	<div class="button-div center-align" id="button-div">
+  		<div id="faq_button col s12 m6">
+				<a href="http://bigmouthfrogdev.com/contact" class="btn button-custom waves-effect waves-light btn-large green">Have a question? Please Bug us!<i class="material-icons right">bug_report</i><br>
+				</a>		
+				<a href="http://bigmouthfrogdev.com/contact" class="btn button-custom waves-effect waves-light btn-large green">I toadally want a free quote!<i class="material-icons right">description</i>
+				</a>
+			</div>
+		</div>
 </div>
+
+
+<div class="fixed-action-btn horizontal">
+   <a class="btn-floating btn-large green">
+     <i class="large material-icons">settings</i>
+   </a>
+   <ul>
+     <li><a class="btn-floating blue"><i class="material-icons">call</i></a></li>     
+     <li><a class="btn-floating purple"><i class="material-icons">sentiment_very_satisfied</i></a></li>
+     <li><a class="btn-floating green"><i class="material-icons">attach_money</i></a></li>
+     <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+     <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+     <li><a class="btn-floating blue"><i class="material-icons">announcement</i></a></li>
+   </ul>
+ </div>
