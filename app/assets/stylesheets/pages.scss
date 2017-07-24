@@ -1,5 +1,10 @@
 @import "gritter";
 
+body {
+    font-size: 0;
+}
+
+
 #header {
 	height: 10%;
 	width: 100%;
@@ -27,7 +32,7 @@
 
 #about_contact {
 	font-family: 'Open sans', sans-serif;
-	font-size: 1.5em;
+	font-size: 15px;
 	float: right;
 	margin-right: 27%;
 	margin-top: 4.5%;
@@ -39,20 +44,21 @@
 
 .link {
   color: white;
-  font-size: 1.5em;
+  font-size: 15px;
   margin-left: 3%;
 }
 
 #drop-pic {
 	width: 100%;
-	height: 30%;
+	height: 550px;
 }
 
 
 .mission-words {
 	text-align: center;
-	color: #4da76e;
-	padding-top: 2%;
+  color: white;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+	margin-top: 30px;
 }
 
 .mission-words h1 {
@@ -62,15 +68,17 @@
 .mission-words h5 {
 	font-family: 'Bellefair', serif;
 	margin-top: 3%;
-	margin-bottom: 5%;
+	margin-bottom: 0px;
 	padding-bottom: 5%;
+
 }
 
 #lilly-service {
 	width: 100%;
-	height: auto;
-	background-color: rgba(77, 167, 110, .9);
+	height: 400px;
+	background-color: transparent;
 	padding-bottom: 1%;
+
 }
 
 #box-service {
@@ -87,7 +95,7 @@
 
 #lilly-row {
 	text-align: center;
-	padding-top: 1%;
+	padding: 25px
 }
 
 #lilly-row div {
@@ -105,7 +113,8 @@
 	padding: 5%;
 	max-height: 170px;
 	max-width: 170px;
-	margin: auto;padding-left: 10px;
+	margin: auto;
+  padding-left: 10px;
 	position: relative;
 }
 
@@ -178,15 +187,37 @@
 	padding-top: 15px;
 }
 
+
 #white-tile {
 	height: auto;
 	width: 100%;
   position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+#tile {
+	height: 500px;
+	width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  margin-bottom: 0px;
+}
+
+.grey-background {
+  background-color: #323C38;
 }
 
 #white-tile h2 {
 	padding-top: 3%;
 }
+
+
 
 #white-tile h2, h4, p {
 	color: #4da76e;
@@ -217,17 +248,6 @@
 	width: 300px;
 }
 
-#grey-tile {
-	height: 450px;
-	background-color: #f4f7f5;
-	width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-}
-
 #grey-tile h2 {
 	font-size: 30px;
 }
@@ -248,6 +268,7 @@
 }
 
 #about-footer {
+  font-size: 12px;
   text-align: center;
 	height: 300px;
 	background-color: #4da76e;
@@ -272,10 +293,12 @@
 }
 
 #about-footer a {
-	text-decoration: none;
+  font-size: 19px;
+  text-decoration: none;
 }
 
 #about-copyright {
+  font-size: 18px;
 	text-align: center;
 	background-color: #4da76e;
 	color: white;
@@ -332,4 +355,40 @@
 
 .employee {
 	font-size: 15px;
+}
+
+.parallax-container {
+   min-height: 650px
+}
+
+.buffer {
+  padding: 5px;
+}
+
+
+.collection-header {
+  font-size: 20px;
+  color: #4da76e;
+}
+.collection-item{
+
+  font-size: 20px;
+}
+
+#button-div {
+  margin-top: 42px;
+}
+
+#title-push-down {
+  margin-top: 300px;
+}
+
+.button-custom {
+  margin-right: 42px;
+  padding: 10px 24px 10px 24px;
+  border: 1px solid transparent;
+}
+
+.button:hover {
+  border: 1px solid white;
 }
