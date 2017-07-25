@@ -1,6 +1,6 @@
 class FeaturedClientsController < ApplicationController
   before_action :set_featured_client, only: [:show, :edit, :update, :destroy]
-  before_action :require_login#, except: [:index, :show]
+  before_action :require_login, except: [:index, :show]
 
   # GET /featured_clients
   # GET /featured_clients.json
