@@ -4,28 +4,6 @@ body {
     font-size: 0;
 }
 
-
-#header {
-	height: 10%;
-	width: 100%;
-	background-color: black;
-	display: inline-block;
-}
-
-#header div {
-	display: inline-block;
-	vertical-align: bottom;
-}
-
-#bmf-pic-thing {
-	margin-right: 15%;
-}
-
-
-#mega-title {
-	margin-right: 15%;
-}
-
 #about_contact {
 	font-family: 'Open sans', sans-serif;
 	font-size: 15px;
@@ -116,33 +94,6 @@ body {
 
 .low-margin {
 	width: 90%;
-}
-
-@media only screen and (max-width: 882px) {
-
-#lilly-service {
-	height: 90%;
-}
-
-}
-
-@media only screen and (max-width: 500px) {
-
-#lilly-row div {
-	height: auto;
-	width: 170px;
-	margin-bottom: 2%;
-}
-
-#lilly-service {
-	height: auto;
-	padding: 5% 0 5% 0;
-}
-
-#box-service {
-	height: 40%;
-}
-
 }
 
 .groupPhoto {
@@ -261,83 +212,6 @@ body {
 #frogs {
 	margin-left: 18%;
 	display: inline-block;
-}
-
-#about-footer {
-  font-size: 12px;
-  text-align: center;
-	height: 300px;
-	background-color: #4da76e;
-	width: 100vw;
-  position: relative;
-  left: 50%;
-  right: 50%;
-  margin-left: -50vw;
-  margin-right: -50vw;
-  font-family: 'Open sans', sans-serif;
-}
-
-#about-footer div {
-	display: inline-block;
-	margin: 20px 50px
-}
-
-#about-footer div p {
-	color: white;
-	font-size: 1.5em;
-	width: 200px;
-}
-
-#about-footer a {
-  font-size: 19px;
-  text-decoration: none;
-}
-
-#about-copyright {
-  font-size: 18px;
-	text-align: center;
-	background-color: #4da76e;
-	color: white;
-}
-
-@media only screen and (max-width: 1020px) {
-
-#grey-tile {
-	height: 650px;
-}
-
-}
-
-@media only screen and (max-width: 800px) {
-
-#grey-tile {
-	height: 700px;
-}
-
-}
-
-@media only screen and (max-width: 1219px) {
-
-#about-footer {
-	height: 50%;
-}
-
-}
-
-@media only screen and (max-width: 855px) {
-
-#about-footer {
-	height: 50%;
-}
-
-}
-
-@media only screen and (max-width: 555px) {
-
-#about-footer {
-	height: 50%;
-}
-
 }
 
 #portfolio-wrapper {

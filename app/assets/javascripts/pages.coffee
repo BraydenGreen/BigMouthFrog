@@ -5,3 +5,6 @@
 $(document).ready ->
   $('.parallax').parallax()
   return
+
+  $('.tap-target').tapTarget('open');
+  $('.tap-target').tapTarget('close');
