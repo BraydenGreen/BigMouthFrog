@@ -1,14 +1,11 @@
-<div id= "header">
-	<div id="bmf-pic-thing">
-		<%= link_to (image_tag "cologo.png"), root_path %>
-	</div>
-	<div>
-		<%= image_tag "frog.png", id: "frog-pic" %>
+<nav>
+  <div class="nav-wrapper black">
+    <a href="#!" id="home_logo_size"><%= link_to (image_tag "new_cologo.png"), root_path %></a>
+    <ul class="right hide-on-med-and-down">
+      <li><%= link_to "Home", root_path %></a></li>
+      <li><%= link_to "About Us", about_path %></a></li>
+      <li><%= link_to "Contact", contact_path %></a></li>
+    </ul>
   </div>
+</nav>
 
-  <div id="about_contact">
-    <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>About Us</p>".html_safe), about_path %>
-    <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>Contact</p>".html_safe), contact_path %>
-    <!-- <%#= link_to ("<p class='mega-nav' id='nav-linkness'>Featured Clients</p>".html_safe), featured_clients_path %> -->
-  </div>
-</div>
