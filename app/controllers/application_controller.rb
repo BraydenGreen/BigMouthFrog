@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_action :set_copyright
 
   def set_copyright
-    @copyright = BigMouthFrogCopyrightTool::Renderer.copyright("Big Mouth Frog Development", "All right reserved")
+    @copyright = BigMouthFrogCopyrightTool::Renderer.copyright("Big Mouth Frog Development", "All rights reserved")
   end
 end
 
