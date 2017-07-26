@@ -5,10 +5,13 @@
 	<div>
 		<%= image_tag "frog.png", id: "frog-pic" %>
   </div>
-
   <div id="about_contact">
     <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>About Us</p>".html_safe), about_path %>
     <%= link_to ("<p class= 'mega-nav' id='nav-linkness'>Contact</p>".html_safe), contact_path %>
+    <% if current_user %>
+    <%= link_to ("<p class='mega-nav' id='nav-linkness'>Dashboard</p>".html_safe), admin_root_path%>
+<% end %>
     <!-- <%#= link_to ("<p class='mega-nav' id='nav-linkness'>Featured Clients</p>".html_safe), featured_clients_path %> -->
   </div>
+
 </div>
