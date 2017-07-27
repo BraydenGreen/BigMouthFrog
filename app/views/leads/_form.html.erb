@@ -1,110 +1,106 @@
 <div id="form_container">
-    <div class="row new_form_row">
-        <div class="col s11">
-            <%= form_with(model: lead, local: true) do |form| %>
-                <% if lead.errors.any? %>
+  <div class="row new_form_row">
+    <div class="col s11">
+      <%= form_with(model: lead, local: true) do |form| %>
+        <% if lead.errors.any? %>
+          <% lead.errors.full_messages.each do |message| %>
+            <%= js add_gritter(message, title: 'BigMouthFrog', sticky: false, nodom_wrap: true) %>
+          <% end %>
+        <% end %>
 
-                    <% lead.errors.full_messages.each do |message| %>
-                        <%= js add_gritter(message, title: 'BigMouthFrog', sticky: false, nodom_wrap: true) %>
-                    <% end %>
-        </div>
-    <% end %>
-
-
-    <div class="row">
-        <div class=" col s8">
+        <div class="row">
+          <div class="col s8">
             <div class="field">
-                <%= form.text_field :name, placeholder: "Name",  id: :lead_name %>
+              <%= form.text_field :name, placeholder: "Name",  id: :lead_name %>
             </div>
+          </div>
+
+          <div class=" col s8">
+            <div class="field">
+              <%= form.text_field :phone, placeholder: "Phone", id: :lead_phone %>
+            </div>
+          </div>
         </div>
 
-        <div class=" col s8">
+        <div class="row">
+          <div class=" col s8">
             <div class="field">
-                <%= form.text_field :phone, placeholder: "Phone", id: :lead_phone %>
+              <%= form.text_field :address, placeholder: "Address", id: :lead_address %>
             </div>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class=" col s8">
+            <div class="field">
+              <%= form.text_field :city, placeholder: "City", id: :lead_city %>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class=" col s8">
+        <div class="row">
+          <div class=" col s8">
             <div class="field">
-                <%= form.text_field :address, placeholder: "Address", id: :lead_address %>
+              <%= form.text_field :state, placeholder: "State", id: :lead_state %>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class=" col s8">
+        <div class="row">
+          <div class=" col s8">
             <div class="field">
-                <%= form.text_field :city, placeholder: "City", id: :lead_city %>
+              <%= form.text_field :zip, placeholder: "Zip", id: :lead_zip %>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class=" col s8">
+        <div class="row">
+          <div class=" col s12">
             <div class="field">
-                <%= form.text_field :state, placeholder: "State", id: :lead_state %>
+              <%= form.text_field :company, placeholder: "Company", id: :lead_company %>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class=" col s8">
-            <div class="field">
-                <%= form.text_field :zip, placeholder: "Zip", id: :lead_zip %>
-            </div>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class=" col s12">
-            <div class="field">
-                <%= form.text_field :company, placeholder: "Company", id: :lead_company %>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class=" col s12">
-            <div class="field">
+        <div class="row">
+          <div class=" col s12">
+              <div class="field">
                 <%= form.text_field :website_url, placeholder: "Website Url", id: :lead_website_url %>
-            </div>
+              </div>
+          </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class=" col s12">
+        <div class="row">
+          <div class=" col s12">
             <div class="field">
-                <%= form.text_field :email, placeholder: "Email", id: :lead_email %>
+              <%= form.text_field :email, placeholder: "Email", id: :lead_email %>
             </div>
+          </div>
         </div>
-    </div>
 
-    <div class="row">
-        <div class="col s12">
+        <div class="row">
+          <div class="col s12">
             <%= form.select :lead_source, ['Facebook', 'Twitter', 'Instagram', 'Linkedin', 'Web', 'Referral'], prompt: "How did you find us?" %>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class=" col s12">
+
+        <div class="row">
+          <div class="col s12">
             <div class="field">
-                <%= form.text_area :website_goals, rows: 15, placeholder: "Website Goals", id: :lead_website_goals %>
-
+              <%= form.text_area :website_goals, rows: 15, placeholder: "Website Goals", id: :lead_website_goals %>
             </div>
+          </div>
         </div>
-    </div>
-    <div class="row">
-        <div class="col s12">
 
+        <div class="row">
+          <div class="col s12">
             <div class="actions">
-                <%= form.submit class: "btn waves-effect waves-light green lighten-3" %>
+              <%= form.submit class: "btn waves-effect waves-light green lighten-3" %>
             </div>
+          </div>
         </div>
+
+      <% end %>
     </div>
-
-<% end %>
-
-    </div>
-</div>
-
+  </div>
 </div>
