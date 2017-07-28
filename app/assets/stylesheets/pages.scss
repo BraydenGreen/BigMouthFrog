@@ -160,6 +160,10 @@ body {
   background-color: #323C38;
 }
 
+.light-grey-background {
+  background-color: #F7F7F7;
+}
+
 #white-tile h2 {
 	padding-top: 3%;
 }
@@ -183,6 +187,10 @@ body {
 	width: 300px;
 }
 
+#white-tile {
+  vertical-align: middle;
+}
+
 #grey-tile h2 {
 	color: #4da76e;
 }
@@ -201,6 +209,11 @@ body {
 
 #grey-tile h4 {
 	font-size: 20px;
+}
+
+#grey-tile  {
+  vertical-align: middle;
+
 }
 
 .pics {
