@@ -7,10 +7,6 @@ class Lead < ApplicationRecord
 
   validates :email, format: { with: /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i, message: "Email must be valid" }
 
-  validates :zip, format: {with: /(([0-9]*)|(([0-9]*)\.([0-9]*)))/, message: "Zip must be vailid"}
-
-  validates :phone, format: {with: /(([0-9]*)|(([0-9]*)\.([0-9]*)))/, message: "Phone must be valid"}
-
   def self.recent
     order("created_at DESC")
   end
