@@ -1,5 +1,5 @@
 <% if flash[:alert] %>
-  <%= js add_gritter(flash[:alert], title: "BMF", sticky: false, time: 2000, image: :warining, nodom_wrap: true) %>
+  <%= js add_gritter(flash[:alert], title: "BMF", sticky: false, time: 2000, image: :warning, nodom_wrap: true) %>
 <% elsif flash[:error] %>
   <%= js add_gritter(flash[:error], title: "BMF",sticky: false, time: 2000, image: :error, nodom_wrap: true) %>
 <% else %>

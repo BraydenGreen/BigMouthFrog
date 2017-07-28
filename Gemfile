@@ -59,3 +59,4 @@ gem 'simple_form'
 gem 'materialize-sass'
 gem "gritter", "1.2.0"
 gem 'jquery-turbolinks', '~> 2.1'
+gem "administrate"

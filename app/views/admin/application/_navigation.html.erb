@@ -1,0 +1,25 @@
+
+<%# 
+        # Navigation
+
+    This partial is used to display the navigation in Administrate.
+    By default, the navigation contains navigation links
+for all resources in the admin dashboard,
+        as defined by the routes in the `admin/` namespace
+ %>
+
+<nav class="navigation" role="navigation">
+
+
+    <%= link_to "Leads", admin_leads_path, class: "navigation__link navigation__link" %>
+
+    <%= link_to "Notes", admin_notes_path, class: "navigation__link navigation__link" %>
+    <%= link_to "Users", admin_users_path, class: "navigation__link navigation__link" %>
+
+    </br>
+    <%= link_to "Back", :back, class: "navigation__link navigation__link" %>
+    <%= link_to "Home", root_path, class: "navigation__link navigation__link" %>
+    </br>
+
+    <%= link_to('Logout', destroy_user_session_path, method: :delete, class: "navigation__link navigation__link")%>
+</nav>
