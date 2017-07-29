@@ -286,3 +286,16 @@ a.email {
   text-decoration: none;
   color: white;
 }
+
+.featured-content {
+  padding: 42px;
+}
+
+#portfolio-background {
+  background-image: url('lilydrip.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
